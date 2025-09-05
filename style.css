@@ -1,0 +1,21 @@
+.scroll-bubble {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+[data-extension-theme="light"] .scroll-bubble {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #222;
+}
+
+[data-extension-theme="dark"] .scroll-bubble {
+  background-color: rgba(30, 30, 30, 0.9);
+  color: #f0f0f0;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Mouse Wheel Buttons Options</title>
+		<link rel="stylesheet" href="popup.css" />
+	</head>
+	<body>
+		<h2>Mouse Wheel Buttons</h2>
+
+		<div class="top-row">
+			<label class="toggle-label">
+				<input type="checkbox" id="enabled" />
+				Enable Extension
+			</label>
+
+			<div id="themeToggle" class="theme-toggle" title="Toggle light/dark theme">
+				<img id="themeIcon" src="../svg/sun.svg" alt="Toggle Theme" />
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="visibilityDistance">Visibility Distance (px):</label>
+			<input type="number" id="visibilityDistance" min="0" />
+		</div>
+
+		<div class="form-group">
+			<label for="scrollAmount">Scroll Amount (% of screen height):</label>
+			<input type="number" id="scrollAmount" min="1" max="100" />
+		</div>
+
+		<div class="form-group">
+			<label for="bubbleSize">Bubble Size (px):</label>
+			<input type="number" id="bubbleSize" min="10" max="200" />
+		</div>
+
+		<button id="saveBtn" disabled>Save</button>
+
+		<script src="popup.js"></script>
+	</body>
+</html>

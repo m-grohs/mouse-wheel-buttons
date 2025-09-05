@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #007bff;
+  --bg-light: #ffffff;
+  --bg-dark: #1e1e1e;
+  --text-light: #000;
+  --text-dark: #fff;
+  --input-bg-light: #f5f5f5;
+  --input-bg-dark: #2a2a2a;
+  --border-radius: 8px;
+  --spacing: 12px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 24px;
+  width: 300px;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+h2 {
+  margin: 0 0 var(--spacing);
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing);
+}
+
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: rotate(20deg);
+}
+
+.theme-toggle img {
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+}
+
+.toggle-label {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+
+.toggle-label input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: var(--spacing);
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  background-color: var(--input-bg-light);
+  color: var(--text-light);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+body.dark input[type="number"] {
+  background-color: var(--input-bg-dark);
+  color: var(--text-dark);
+  border: 1px solid #444;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--spacing);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+button.saving {
+  animation: saveFlash 0.8s ease forwards;
+}
+
+@keyframes saveFlash {
+  0% {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  50% {
+    background-color: #28a745;
+    color: white;
+  }
+  100% {
+    background-color: var(--primary-color);
+    color: white;
+  }
+}
