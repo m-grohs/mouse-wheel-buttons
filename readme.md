@@ -12,3 +12,7 @@ Hence this Extension was born.
 
 As i was curious how well an AI would build this Extension i tried using ChatGPT free tier.
 In about 20 minutes and 6-7 revision the Extension was build with the only contribution i did was the Prompt that let the AI lose and 3 SVGs from older Projects that did fit here.
+
+### Download
+
+This Extension is Firefox only and can be downloaded in [Releases](https://github.com/m-grohs/mouse-wheel-buttons/releases/tag/v0.1.0) or @ <https://addons.mozilla.org/en-GB/firefox/addon/mouse-wheel-buttons/>
