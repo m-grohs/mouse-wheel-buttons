@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Mouse Wheel Buttons",
 	"description": "Adds floating bubbles to scroll smoothly up or down the page in place of the Scroll Wheel.",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": "m-grohs",
 	"homepage_url": "https://github.com/m-grohs/mouse-wheel-buttons",
 	"icons": {
