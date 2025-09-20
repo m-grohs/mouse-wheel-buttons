@@ -2,12 +2,25 @@
 	"manifest_version": 3,
 	"name": "Mouse Wheel Buttons",
 	"description": "Adds floating bubbles to scroll smoothly up or down the page in place of the Scroll Wheel.",
-	"version": "0.1.0",
+	"version": "0.1.1",
+	"author": "m-grohs",
+	"homepage_url": "https://github.com/m-grohs/mouse-wheel-buttons",
+	"icons": {
+		"16": "img/mouse-wheel-button-16.png",
+		"32": "img/mouse-wheel-button-32.png",
+		"48": "img/mouse-wheel-button-48.png",
+		"128": "img/mouse-wheel-button-128.png",
+		"256": "img/mouse-wheel-button-256.png"
+	},
 	"permissions": ["storage", "scripting"],
 	"action": {
 		"default_popup": "popup/popup.html",
 		"default_icon": {
-			"256": "svg/wheel-button.svg"
+			"16": "img/mouse-wheel-button-16.png",
+			"32": "img/mouse-wheel-button-32.png",
+			"48": "img/mouse-wheel-button-48.png",
+			"128": "img/mouse-wheel-button-128.png",
+			"256": "img/mouse-wheel-button-256.png"
 		}
 	},
 	"content_scripts": [
