@@ -17,7 +17,7 @@ const elements = {
 };
 
 function updateThemeUI(theme) {
-	elements.themeIcon.src = theme === 'dark' ? '../svg/sun.svg' : '../svg/moon.svg';
+	elements.themeIcon.src = theme === 'dark' ? '../img/sun.svg' : '../img/moon.svg';
 	document.body.className = theme;
 }
 
