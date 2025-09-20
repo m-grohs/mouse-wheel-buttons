@@ -2,6 +2,8 @@
 
 This is a Browser Extension that adds 2 floating Bubbles to scroll smoothly up or down the current Webpage in place of the Scroll Wheel.
 
+![2 floating Bubbles](./img/screenshot.png)
+
 
 ### Idea/Need of this Extension
 
